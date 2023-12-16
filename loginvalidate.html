@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 align="center">Login form</h2>
+    <form align="center">
+        <label for="userid">Username:</label>
+        <input type="text" id="userid"><br><br>
+
+        <label for="email">Email id:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass"><br><br>
+
+        <label for="repass">Re-enter Password:</label>
+        <input type="password" id="repass"><br><br>
+
+        <input type="button" value="Login" onclick="validate()">
+    </form>
+
+</body>
+
+<script>
+    function validate(){
+    var user=document.getElementById("userid").value;
+    var email=document.getElementById("email").value;
+    var pw=document.getElementById("pass").value;
+    var rpw=document.getElementById("repass").value;
+    var dot=email.indexOf(".");
+    var at=email.indexOf("@");
+
+    if(user=="" || pw==""){
+        alert("Username or password cannot be empty")
+    }
+    else if(user.length<6 || pw.length<6){
+        alert("Username or password cannot be less than 6 characters")
+    }
+    else if(pw!=rpw){
+        alert("Please re-enter correct password")
+    }
+    else if(dot<=at+2 || at<1 || dot+2>email.length){
+        alert("Please enter valid mail id")
+    }
+    else{
+        window.open("loop.html");
+    }
+
+    
+    }
+</script>
+</html>

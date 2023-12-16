@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2" >
+        <tr>
+            <td id="test">
+
+            </td>
+            <td id="test2">
+
+            </td>
+        </tr>
+    </table>
+
+
+    <script type="text/javascript">
+        var data=10;
+        var data2=20;
+        document.getElementById("test").innerHTML=data;
+        document.getElementById("test2").innerHTML=data2;
+
+        function showcommentform() {
+            var data = "<br>Name:<br> <input type='text' name='name'><br> Comment:<br><input type='text' >";
+            document.getElementById('mylocation').innerHTML = data;
+        }
+    </script>
+
+    <form name="myform">
+        <input type="button" value="comment" onclick="showcommentform()">
+        <div id="mylocation"></div>
+
+    </form>
+</body>
+
+</html>

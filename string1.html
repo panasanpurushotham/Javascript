@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Male:<input type="radio" name="gender" value="male"><br>
+        Female:<input type="radio" name="gender" value="female"><br>
+        Others:<input type="radio" name="gender" value="others"><br>
+        <input type="button" value="print" onclick="getGenderCount1()">
+    </form>
+    <script>
+        // function getGenderCount(){
+        //     var total = document.getElementsByName("gender");
+        //     // alert("total genders are: "+total.length);
+        //     for(var i=0; i<total.length; i++){
+        //         if(total[i].checked){
+        //             alert(total[i].value);
+        //             break;
+        //         }
+        //     }
+
+        // }
+        function getGenderCount1(){
+            var total1 = document.getElementsByName("gender");
+            for(var i=0; i<total1.length; i++){
+                if(total1[i].checked){
+                    alert(total1[i].value);
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

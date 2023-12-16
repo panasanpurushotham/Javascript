@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todays date</title>
+</head>
+
+<body>
+    <!-- <h2>What can javascript do?</h2>
+    <p id="demo">Javascript can change HTML Content</p> -->
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML="Hellojavascript!"'>click me!</button> 
+   <h2>User Data</h2>
+   <form>
+    <label for="n1">Enter first number</label>
+    <input type="text" id="n1"><br><br>
+    <label for="n2">Enter Second number</label>
+    <input type="text" id="n2"><br><br>
+    <input type="button" value="ADD" onclick="add()">
+    <input type="button" value="SUB" onclick="sub()">
+    <input type="button" value="MUL" onclick="mul()">
+    <input type="button" value="DIV" onclick="div()">
+   </form>
+
+   <!-- <label for="n">Enter the number</label>
+   <input  type="text" id="n"><br>
+   <input type="button" value="submit" onclick="prime()" > -->
+
+    <script>
+        // let d = new Date();
+        // document.write("Todays date is "+d+"<br>");
+
+        function add(){
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            document.write(n1+n2);
+        }
+        function sub(){
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            document.write(n1-n2);
+        }
+        function mul(){
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            document.write(n1*n2);
+        }
+        function div(){
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            document.write(n1/n2);
+        }
+
+
+        // var add = new Function("a1","a2","return a1+a2");
+        // document.write("<br>Addition "+add(5,2));
+        // var sub = new Function("a1","a2","return a1-a2");
+        // document.write("<br>Substraction "+sub(10,5));
+        // var mul = new Function("a1","a2","return a1*a2");
+        // document.write("<br>Multiplication "+mul(10,5));
+        // var div = new Function("a1","a2","return a1/a2");
+        // document.write("<br>Division "+div(10,5));
+
+        // var power = new Function("a1","a2","return Math.pow(a1,a2)");
+        // document.write("<br>10^5 "+power(10,5));
+
+
+        // emp1={id:101, name:"mahesh", salary:"50000"};
+        // emp2={id:102, name:"yash", salary:"55000"};
+        // document.write(emp1.id+"  "+emp1.name+"  "+emp1.salary+"<br>");
+        // document.write(emp2.id+"  "+emp2.name+"  "+emp2.salary+"<br>");
+
+        // const add=()=>{
+        //     document.write("we are learning arrows in JavaScript")
+        // }
+        // add();
+
+
+        
+        // var flag = true;
+        // var prime=n=>{
+        //     for(let i=2; i<=n/2; i++){
+        //         if(n % i == 0){
+        //             flag=false;
+        //             break;
+        //         }
+        //     }
+
+        //     if(flag==true){
+        //         document.write(n+" is prime number");
+        //     }
+        //     else{
+        //         document.write(n+" is not a prime number");
+        //     }
+        // }
+        // prime(23);
+
+        // function area(l){
+        //     return l*l;
+        // }
+        // var areaOfSquare = area(5);
+        // document.write("<br> area of square "+areaOfSquare);
+
+        // function perimeter(l){
+        //     return 4*l;
+        // }
+        // var perimeterSquare = perimeter(5);
+        // document.write("<br> perimeter of square "+perimeterSquare);
+
+        // var n = 105;
+        // if(n%2==0){
+        //     document.write("<br>"+n+" is a even number")
+        // }
+        // else{
+        //     document.write("<br>"+n+" is a odd number")
+        // }
+
+        // var n=5;
+        // for(let i=1; i<=n; i++){
+        //     for(let j=1; j<=i; j++){
+        //     document.write("*");
+        //     }
+        //     document.write("<br> ");
+        // }
+
+
+        // var date = new Date();
+        // var n = date.getDate();
+        // document.write("Today is: "+n+"<br>");
+
+        // var n1=date.getFullYear();
+        // document.write("Today is: "+n1+"<br>");
+
+        // var n2=date.getDay();
+        // document.write("Today is: "+n2+"<br>");
+
+        // var n3=date.getMonth();
+        // document.write("Today is: "+n3+"<br>");
+
+        // var n4=date.getTime();
+        // document.write("Today is: "+n4+"<br>");
+
+        // var n5=date.getMilliseconds();
+        // document.write("Today is: "+n5+"<br>");
+
+        // switch(n2){
+        //     case 0: document.write("Its Sunday!");
+        //     break;
+        //     case 1: document.write("Its Monday!");
+        //     break;
+        //     case 2: document.write("Its Tuesday!");
+        //     break;
+        //     case 3: document.write("Its Wednesday!");
+        //     break;
+        //     case 4: document.write("Its Thursday!");
+        //     break;
+        //     case 5: document.write("Its Friday!");
+        //     break;
+        //     case 6: document.write("Its Saturday!");
+        //     break;
+        //     default: document.write("Wrong Choice!");
+
+
+        // }
+
+
+
+        
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

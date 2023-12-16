@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Employee Data</h2>
+    <label for="id">Enter your id</label>
+    <input type="text" id="id"><br><br>
+    <label for="name">Enter your name</label>
+    <input type="text" id="name"><br><br>
+    <label for="salary">Enter your salary</label>
+    <input type="text" id="salary"><br><br>
+    <input type="button" value="Submit" onclick="createobject()"><br><br>
+    
+    <script>
+        emp1 = {id:101, name:"mahesh", salary:50000};
+        emp2 = {id:102, name:"yash", salary:50000};
+        document.write(emp1.id+" "+emp1.name+" "+emp1.salary+"<br>");
+        document.write(emp2.id+" "+emp2.name+" "+emp2.salary+"<br>");
+
+        var emp3 = new Object();
+        emp3.id = 103;
+        emp3.name = "nitin";
+        emp3.salary = 50000;
+        document.write(emp3.id+" "+emp3.name+" "+emp3.salary+"<br>");
+
+        function emp(id, name, salary){
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+        }
+        emp4 = new emp(104, "suresh", 50000);
+        document.write(emp4.id+" "+emp4.name+" "+emp4.salary+"<br>");
+
+        function createobject(){
+            emp5 = new Object();
+            emp5.id = document.getElementById("id").value;
+            emp5.name = document.getElementById("name").value;
+            emp5.salary = document.getElementById("salary").value;
+            document.write(emp5.id+" "+emp5.name+" "+emp5.salary+"<br>");
+
+        }
+
+        var arr1=[10, 20, 30, 40];
+        for(let i=0; i<arr1.length; i++){
+            document.write(arr1[i]+"<br>")
+        }
+
+        var name1=new Array();
+        name1[0]="yash";
+        name1[1]="mahesh";
+        name1[2]="suresh";
+        name1[3]="nitin";
+        for(let i=0; i<name1.length; i++){
+            document.write(name1[i]+"<br>")
+        }
+
+        var name2 = new Array("yash","mahesh","suresh","nitin");
+        for(let i=name2.length-1; i>=0; i--){
+            document.write(name2[i]+"<br>")
+        }
+
+        var result=arr1.concat(name1,name2);
+        document.write(result+"<br>")
+
+        var result2=name2.copyWithin(0,1);
+        document.write(result2+"<br>")
+
+        var result3=name2.entries();
+        for(let i of result3){
+            document.write(i+"<br>")
+        }
+
+        var result4=name2.fill("sai",0,2);
+        document.write(result4+"<br>");
+
+        var a1=[15,4,25,24,30];
+
+        var r1=a1.find(x=>x<Math.sqrt(36));
+        document.write(r1+"<br>");
+
+        var r2=a1.findIndex(x=>x>24);
+        document.write(r2+"<br>");
+
+        var r3=a1.includes(4,2);
+        document.write(r3+"<br>");
+
+        var r4=a1.indexOf(25);
+        document.write(r4+"<br>");
+
+        var r5=a1.push(35,40);
+        document.write(a1+"<br>");
+
+        a1.pop();
+        document.write(a1+"<br>");
+        a1.pop();
+        document.write(a1+"<br>");
+
+        // document.write(a1.reverse()+"<br>");
+
+        // for(let i=0; i<a1.length; i++){
+        //     document.write(a1[i]+"<br>")
+        // }
+
+        // for(let i=a1.length; i>=0; i--){
+        //     document.write(a1[i]+"<br>")
+        // }
+
+        var r6=a1.sort(function compare(a,b){
+            return a-b;
+        });
+        document.write(r6+"<br>");
+
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

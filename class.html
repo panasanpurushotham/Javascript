@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class Employee{
+        //     add(n1,n2){
+        //     document.write("Addition of given numbers is:"+(n1+n2)+"<br>");
+        //     }
+        // }
+        // var e1 = new Employee();
+        // e1.add(12,12);
+        // e1.add(50,15);
+
+
+        // class Employee{
+        //     constructor(eid,ename){
+        //         this.id=eid;
+        //         this.name=ename;
+        //     }
+        //     putData(){
+        //         document.write(this.id+" "+this.name);
+        //     }
+        // }
+        // var e1=new Employee(101,"yash"+"<br>");
+        // var e2=new Employee(102,"mahesh"+"<br>");
+        // e1.putData();
+        // e2.putData();
+
+
+        var Employee= class{
+            constructor(eid,ename){
+                this.id=eid;
+                this.name=ename;
+            }
+            putData(){
+                document.write(this.id+" "+this.name)
+            }
+        }
+        var e1=new Employee(101,"Yash"+"<br>");
+        e1.putData();
+
+    </script>
+    
+</body>
+</html>

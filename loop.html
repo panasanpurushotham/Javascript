@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for(let i=0; i<=50; i++){                      ///EVEN NUMBER
+        //     if(i%2==0){
+        //     document.write(i+"<br>");
+        //     }
+        // }
+
+        // for (let i = 2; i < 50; i++) {                        ///PRIME NUMBER
+        //     var isPrime = true;
+        //     for (let j = 2; j < i; j++) {
+        //         if (i % j == 0) {
+        //             isPrime = false;
+        //             break;
+        //         }
+        //     }
+        //     if (isPrime) {
+        //         document.write(i + "<br>");
+        //     }
+        // }
+
+
+        // var i = 1;                                             //ODD NUMBER
+        // while(i<=50){
+        //      if(i%2!=0){
+        //     document.write(i+"<br>");
+        //     }
+        //     i++;
+        // }
+
+
+        // var n = 5;                                                       //BOX PATTERN
+        // for (let i = 1; i <= n; i++) {
+        //     for (let j = 1; j <= n; j++) {
+        //         document.write("*");
+        //     }
+        //     document.write(" "+"<br>");
+        // }
+
+        // var n = 5;                                                       // PATTERN
+        // for (let i = 1; i <= n; i++) {
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write("*");
+        //     }
+        //     document.write(" "+"<br>");
+        // }
+
+
+        // function helloWorld(){                                              //FUNCTION
+        //     alert("Hello All!!");
+        // }
+
+        // function square(n){
+        //     alert("Square of n is : "+(n*n));
+        // }
+
+        // function addition(a1,a2){                                          //ADDITION
+        //     alert("Addition of a1 and a2 is : "+(a1+a2));
+        // }
+        // function substraction(a1,a2){
+        //     alert("Substraction of a1 and a2 is : "+(a1-a2));
+        // }
+        // function multiplication(a1,a2){
+        //     alert("Multiplication of a1 and a2 is : "+(a1*a2));
+        // }
+        // function division(a1,a2){
+        //     alert("Division of a1 and a2 is : "+(a1/a2));
+        // }
+
+
+        // function add(a1,a2){
+        //     return a1+a2;
+        // }
+        // var result = add(12,12);
+        // document.write("Addition of a1 and a2 is : ", +result);
+
+
+
+        // function area(l,w){                                                        //RECTANGLE
+        //     return l*w;
+        // }
+        // var areaOfRectangle = area(5,4);
+        // document.write("Area of Rectangle is : ", +areaOfRectangle);
+
+        // function perimeter(l,w){
+        //     return 2*(l+w);
+        // }
+        // var perimeterRectangle = perimeter(5,4);
+        // document.write("<br>Perimeter of Rectangle is : ", +perimeterRectangle);
+
+
+        var add = new Function("n1", "n2", "return n1+n2");
+        document.write("Addition :" + add(12,2));
+
+        var sub = new Function("n1", "n2", "return n1-n2");
+        document.write("<br>Substraction :" + sub(12,2));
+
+        var mul = new Function("n1", "n2", "return n1*n2");
+        document.write("<br>Multiplication :" + mul(12,2));
+
+        var div = new Function("n1", "n2", "return n1/n2");
+        document.write("<br>Division :" + div(12,2));
+
+        var power = new Function("n1", "n2", "return Math.pow(n1,n2)");
+        document.write("<br>2^4 :" + power(2,4));
+
+    </script>
+
+    <!-- <input type="button" onclick="helloWorld()" value="Greet user">
+    <input type="button" onclick="square(7)" value="SQUARE"> -->
+
+    <!-- <input type="button" onclick="addition(10,5)" value="ADD">
+    <input type="button" onclick="substraction(10,5)" value="SUB">
+    <input type="button" onclick="multiplication(10,5)" value="MUL">
+    <input type="button" onclick="division(10,5)" value="DIV"> -->
+
+</body>
+
+</html>

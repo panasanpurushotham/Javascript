@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Male: <input type="radio" name="gender" value="male" ><br>
+        Female: <input type="radio" name="gender" value="female" ><br>
+        Others: <input type="radio" name="gender" value="others" ><br>
+        <input type="button" value="print" onclick="getcount()">
+    </form>
+    <script>
+        // var str= "I love bikes";
+        // document.write(str+"<br>");
+
+        // var str1 = new String("I love bikes and cars");
+        // document.write(str1+"<br>");
+
+        // document.write(str.charAt(7)+"<br>");
+
+        // var str2 = str.concat(" "+"Hello all!"+str1);
+        // document.write(str2+"<br>");
+
+        // document.write(str.indexOf("e")+"<br>");
+
+        // document.write(str.lastIndexOf("e")+"<br>");
+
+        // document.write(str.match("q")+"<br>");
+
+        // document.write(str.replace("bikes","cars")+"<br>");
+        // document.write(str+"<br>");
+
+        // document.write(str.search("bikes")+"<br>");
+
+        // document.write(str1.substr(7,7)+"<br>");
+
+        // document.write(str1.substring(7,13)+"<br>");
+
+        // document.write(str1.toUpperCase()+"<br>");
+
+        // document.write(str1.toLowerCase()+"<br>");
+
+        // function warnuser(){
+        //     alert("Hello all")
+        // }
+
+        // function warnuser1(){
+        //     var t = confirm("Do you confirm!!")
+        //     if(t==true){
+        //         alert("OK")
+        //     }
+        //     else{
+        //         alert("cancel")
+        //     }
+        // }
+
+        // function warnuser2(){
+        //     var t = prompt("what u like?")
+        //     alert("so u like "+t)
+        // }
+
+        // function warnuser3(){
+        //     var t = open("date.html")       
+        // }
+
+        // function warnuser4(){
+        //     var t = close();      
+        // }
+
+        // function warnuser5(){
+        //     var t1 = prompt("Enter first number");
+        //     var t2 = prompt("Enter second number");
+        //     var add = parseInt(t1)+parseInt(t2);
+        //     var sub = parseInt(t1)-parseInt(t2);
+        //     var mul = parseInt(t1)*parseInt(t2);
+        //     var div = parseInt(t1)/parseInt(t2);
+        //     alert("ADDITION: "+add)
+        //     alert("SUBSTRACTION: "+sub)
+        //     alert("MULTIPLICATION: "+mul)
+        //     alert("DIVISION: "+div)
+        // }
+
+        // function warnuser6(){
+        //     // history.forward();
+        //     //history.back();
+        //     history.go(1);
+        // }
+
+        // document.write(screen.height+"<br>");
+        // document.write(screen.width+"<br>");
+        // document.write(screen.availHeight+"<br>");
+        // document.write(screen.availWidth+"<br>");
+        // document.write(screen.colorDepth+"<br>");
+        // document.write(screen.pixelDepth+"<br>");
+
+        function getcount(){
+            var total = document.getElementsByName("gender");
+            // alert("total genders are: "+total.length)
+            for(var i=0; i<total.length; i++){
+                if(total[i].checked){
+                    alert(total[i].value);
+                    break;
+                }
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+    <!-- <input type="button" value="print" onclick="warnuser6()"> --> 
+</body>
+</html>

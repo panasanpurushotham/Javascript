@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function m1(){
+            alert("Your are successfull");
+        }
+        function m2(){
+            alert("Hello");
+        }
+
+        function add(){
+            var a=10;
+            var b=5;
+            var c=a+b;
+            document.write(c);
+        }
+
+        var y=100;
+        function a(){
+            window.x=120;
+            var z=200;
+            document.write(z+"<br>");
+        }
+        function b(){
+            document.write(y+"<br>")
+            document.write(window.x+"<br>")
+        }
+        a();
+        b();
+
+        function add(){
+            var n1= parseInt(document.getElementById("n1").value);
+            var n2= parseInt(document.getElementById("n2").value);
+            document.write(n1+n2);
+        }
+        function sub(){
+            var n1= parseInt(document.getElementById("n1").value);
+            var n2= parseInt(document.getElementById("n2").value);
+            document.write(n1-n2);
+        }
+        function mul(){
+            var n1= parseInt(document.getElementById("n1").value);
+            var n2= parseInt(document.getElementById("n2").value);
+            document.write(n1*n2);
+        }
+        function div(){
+            var n1= parseInt(document.getElementById("n1").value);
+            var n2= parseInt(document.getElementById("n2").value);
+            document.write(n1/n2);
+        }
+    </script>
+
+    <form>
+        <input type="button" onclick="add()" value="a+b">
+        <input type="text" onclick="m2()" value="submit">
+        <br>
+
+        <h1>user data</h1>
+        <label for="n1">Enter First number</label>
+        <input type="text" id="n1"><br>
+        <label for="n2">Enter Second number</label>
+        <input type="text" id="n2"><br>
+        <input type="button" value="add" onclick="add()">
+        <input type="button" value="sub" onclick="sub()">
+        <input type="button" value="mul" onclick="mul()">
+        <input type="button" value="div" onclick="div()">
+
+    </form>
+</body>

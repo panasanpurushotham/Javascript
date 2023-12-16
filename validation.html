@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function validate(){
+            var name1 = document.getElementById("name");
+            var password1 = document.getElementById("Password");
+            var name = name1.value;
+            var password = password1.value;
+            if(name === ""){
+                alert("Please Enter Name !!!");
+            }
+            else if(password === ""){
+                alert("Please Enter Password !!!");
+            }
+            else if(name === "Nivas" && password === "Nivas"){
+                name1.value = "";
+                password1.value = "";
+                window.open("BOM.html");
+            }
+            else{
+                alert("Invalid Credentials !!!");
+                name1.value = "";
+                password1.value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <form>
+        <h1>Login Form</h1>
+        <table>
+        <tr>
+        <td><label for="name"> User Name:</label></td>
+        <td><input type = "text" id = "name" class="name"></td>
+        </tr>
+        <tr>
+        <td><label for="Password">Password: </label></td>
+        <td><input type = "password" id = "Password" class = "Password"></td>
+        </tr>
+        <tr>
+        <td colspan="2"><center><input type = "button" value = "Login" id = "Registerbtn" class = "Registerbtn" onclick="validate();"></center></td>
+        </tr>
+        </table>
+        </form>
+    </center>
+</body>
+</html>

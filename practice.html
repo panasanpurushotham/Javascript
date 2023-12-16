@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age = 2;
+        // switch (true) {
+        //     case age < 18: document.write("he is a kid, he cant have a license");
+
+        //         break;
+
+        //     case age > 18: document.write("he can apply for license");
+        //         break;
+
+        //     default: document.write("wrong choice")
+
+        // }
+
+        //   for(let i=2; i<=50; i++){
+        //     var isPrime = true;
+        //     for(let j=2; j<i; j++){
+        //         if(i%j==0){
+        //             isPrime = false;                  
+        //             break;
+        //         }
+        //     }
+        //     if(isPrime){
+        //         document.write(i+"<br>")
+        //     }
+        //   }
+
+        // var flag = true;                                                              //prime no.
+        // var n = 23;
+        // for (let i = 2; i <= n/2; i++) {
+        //     if (n % i == 0) {
+        //         flag = false;
+        //         break;
+        //     }
+        // }
+
+        //     // Check and display output
+        //     if (flag == true) {
+        //         document.write(n + " is prime");
+        //     }
+        //     else {
+        //         document.write(n + " is not prime");
+        //
+        //    }
+
+        var add = new Function("n1","n2","return n1+n2");
+        document.write("add : " + add(12,12));
+
+        var sub = new Function("n1","n2","return n1-n2");
+        document.write("<br>sub : " + sub(12,12));
+
+        var mul = new Function("n1","n2","return n1/n2");
+        document.write("<br>mul : " + mul(12,12));
+
+        var div = new Function("n1","n2","return n1/n2");
+        document.write("<br>div : " + div(12,12));
+
+        var power = new Function("n1","n2","return Math.pow(n1,n2)");
+        document.write("<br>pow : " + power(12,12));
+
+        function area(l,w){                                                       
+            return l*w;
+        }
+        var areaOfRectangle = area(5,4);
+        document.write("Area of Rectangle is : ", +areaOfRectangle);
+
+        function perimeter(l,w){
+            return 2*(l+w);
+        }
+        var perimeterRectangle = perimeter(5,4);
+        document.write("<br>Perimeter of Rectangle is : ", +perimeterRectangle);
+
+    </script>
+
+    <input type="button" onclick="add(12,12)" value="ADD">
+    <input type="button" onclick="sub(12,12)" value="SUB">
+    <input type="button" onclick="mul(12,12)" value="MUL">
+    <input type="button" onclick="div(12,12)" value="DIV">
+    <input type="button" onclick="power" value="POWER">
+    <input type="button" onclick="areaOfRectangle" value="AREA">
+
+</body>
+
+</html>
